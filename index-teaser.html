@@ -34,18 +34,6 @@
           background-size: cover;
       }
     </style>
-
-    <script type="text/javascript">
-      var video = document.getElementById('bgvid');
-      video.addEventListener('click',function(){
-        video.play();
-      },false);
-      // $(document).ready(function(){
-      //     md = new MobileDetect(window.navigator.userAgent);
-      //     if (md.mobile() !== null) {
-      //       $('.mobile').show();
-      //     }});
-    </script>
 </head>
 
 <body>
@@ -53,8 +41,8 @@
       <source src="http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER_mb.mp4">
   </video> -->
   <div class="mobile">
-    <video playsinline controls loop poster="" id="bgvid">
-        <source src="http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER_mb.mp4">
+    <video controls loop poster="" id="bgvid">
+        <source src="http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER_mb.mp4" type="video/mp4">
     </video>
   </div>
 </body>
