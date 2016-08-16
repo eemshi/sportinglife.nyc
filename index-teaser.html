@@ -24,6 +24,7 @@
         md = new MobileDetect(window.navigator.userAgent);
         if (md.mobile() !== null) {
             var vid = document.getElementById('bgvid');
+            vid.attr('controls','true');
             $('.flex-center').click(
               function() {
                 vid.play();
@@ -37,6 +38,9 @@
       <source src="http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER4.mp4">
   </video>
   <div class="flex-center">
+    <div class="mobile">
+
+    </div>
     <div><h2>Slam Dunk Vol. I coming soon</h2></div>
     <div class="mail-list  js-mail-list-signup">
       <form id="mail-list-signup" class="form  form--mail-list-signup" method="POST" action="https://my.sendinblue.com/users/subscribeembed/js_id/2a2sw/id/1">
@@ -56,10 +60,5 @@
       </form>
     </div>
   </div>
-  <!-- <div class="mobile">
-    <video autoplay controls loop id="bgvid">
-        <source src="http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER_mb.mp4" type="video/mp4">
-    </video>
-  </div> -->
 </body>
 </html>
