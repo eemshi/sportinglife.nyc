@@ -24,13 +24,16 @@
         md = new MobileDetect(window.navigator.userAgent);
         if (md.mobile() !== null) {
             var vid = document.getElementById('bgvid');
-            vid.play();
+            $('.flex-center').click(
+              function() {
+                vid.play();
+              });
         }});
     </script>
 </head>
 
 <body>
-  <video playsinline autoplay loop poster="img/teaser-poster.png" id="bgvid">
+  <video playsinline autoplay loop id="bgvid">
       <source src="http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER4.mp4">
   </video>
   <div class="flex-center">
