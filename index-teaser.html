@@ -15,35 +15,40 @@
     <meta name="description" content="Slam Dunk Vol. I coming soon">
 
     <title>Sporting Life</title>
-
-    <style>
-      video#bgvid {
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          min-width: 100%;
-          min-height: 100%;
-          width: auto;
-          height: auto;
-          /*z-index: -100;*/
-          -ms-transform: translateX(-50%) translateY(-50%);
-          -moz-transform: translateX(-50%) translateY(-50%);
-          -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-          background: url() no-repeat;
-          background-size: cover;
-      }
-    </style>
+    <link rel="stylesheet" href="css/teaser.css"/>
 </head>
 
 <body>
-  <!-- <video playsinline controls loop poster="" id="bgvid">
-      <source src="http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER_mb.mp4">
-  </video> -->
-  <div class="mobile">
-    <video controls loop id="bgvid">
+  <video playsinline autoplay loop poster="img/teaser-poster.png" id="bgvid">
+      <source src="http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER4.mp4">
+  </video>
+  <div class="flex-center">
+    <div><h2>Slam Dunk Vol. I coming soon</h2></div>
+    <div class="mail-list  js-mail-list-signup">
+      <form id="mail-list-signup" class="form  form--mail-list-signup" method="POST" action="https://my.sendinblue.com/users/subscribeembed/js_id/2a2sw/id/1">
+        <input type="hidden" name="js_id" id="js_id" value="2a2sw"><input type="hidden" name="listid" id="listid" value="4">
+        <input type="hidden" name="from_url" id="from_url" value="yes">
+        <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
+        <input type="hidden" name="req_hid" id="req_hid" value="">
+        <ul class="signup-widget">
+          <li>
+            <input class="email" type="email" value="" placeholder="you@email.com" name="email" autocomplete="off">
+          </li>
+          <li>
+            <button type="submit" class="submit">Sign Up</button>
+          </li>
+        </ul>
+        <div class="result"></div>
+      </form>
+    </div>
+  </div>
+  <!-- <div class="mobile">
+    <video autoplay controls loop id="bgvid">
         <source src="http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER_mb.mp4" type="video/mp4">
     </video>
-  </div>
+  </div> -->
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="js/mail-list.js"></script>
 </body>
 </html>

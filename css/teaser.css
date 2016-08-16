@@ -1,0 +1,79 @@
+@font-face {
+  font-family: LetterRacer10;
+  src: url("../font/LetterRacer10.ttf");
+}
+
+body {
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  font-family: LetterRacer10;
+}
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url() no-repeat;
+  background-size: cover;
+}
+
+.flex-center {
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+ul,li {
+  list-style-type: none;
+  list-style-position:inside;
+  margin:0;
+  padding:0;
+  display: table-cell;
+}
+
+.email {
+  font-family: LetterRacer10;
+  font-size: 32px;
+  width: auto;
+  color: #fff;
+  background: none;
+  outline: none;
+  padding: 6px;
+  border-width: 1px;
+  border-color: #fff;
+  /*border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.submit {
+  font-family: LetterRacer10;
+  font-size: 32px;
+  color: #fff;
+  background: none;
+  outline: none;
+  padding: 6px;
+  border-width: 1px;
+  cursor: pointer;
+}
