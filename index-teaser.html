@@ -24,7 +24,7 @@
         md = new MobileDetect(window.navigator.userAgent);
         if (md.mobile() !== null) {
             var vid = document.getElementById('bgvid');
-            vid.attr('controls','true');
+            $('#bgvideo').attr('controls','true');
             $('.flex-center').click(
               function() {
                 vid.play();
