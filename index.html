@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- twitter metadata -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@sportinglifeny">
+    <meta name="twitter:domain" content="sportinglife.nyc">
+    <meta name="twitter:creator" content="@sportinglifeny">
+    <meta name="twitter:title" content="Sporting Life">
+    <meta name="twitter:image:src" content="http://sportinglife.nyc/img/teaser-poster.jpg">
+    <meta name="twitter:description" content="Slam Dunk Vol. I coming soon">
+    <!-- facebook metadata -->
+    <meta property="og:image" content="http://sportinglife.nyc/img/teaser-poster.jpg" />
+    <meta name="description" content="Slam Dunk Vol. I coming soon">
+
+    <title>Sporting Life</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"></link>
+    <link rel="stylesheet" href="css/teaser.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/mobile.min.js"></script>
+    <script src="js/mail-list.js"></script>
+    <script>
+    $(document).ready(function(){
+        md = new MobileDetect(window.navigator.userAgent);
+        if (md.mobile() !== null) {
+            var vid = document.getElementById('bgvid');
+            $('.mobile').show();
+            $('.mobile').click(
+              function() {
+                vid.play();
+                $('.mobile').hide();
+              });
+        }});
+    </script>
+</head>
+
+<body>
+  <video playsinline webkit-playsinline autoplay loop poster="img/teaser-poster.jpg" id="bgvid">
+      <source src="http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER4.mp4">
+  </video>
+  <div class="flex-center">
+    <div class="mobile">
+      <i class="fa fa-play-circle fa-inverse fa-lg" aria-hidden="true"></i>
+    </div>
+    <div><h2>Slam Dunk Vol. I coming soon</h2></div>
+    <div class="mail-list  js-mail-list-signup">
+      <form id="mail-list-signup" method="POST" action="https://my.sendinblue.com/users/subscribeembed/js_id/2a2sw/id/1">
+        <input type="hidden" name="js_id" id="js_id" value="2a2sw"><input type="hidden" name="listid" id="listid" value="4">
+        <input type="hidden" name="from_url" id="from_url" value="yes">
+        <input type="hidden" name="hdn_email_txt" id="hdn_email_txt" value="">
+        <input type="hidden" name="req_hid" id="req_hid" value="">
+        <ul class="signup-widget">
+          <li>
+            <input class="email" type="email" value="" placeholder="you@email.com" name="email" autocomplete="off">
+          </li>
+          <li>
+            <button type="submit" class="submit">Sign Up</button>
+          </li>
+        </ul>
+        <div class="result"></div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
