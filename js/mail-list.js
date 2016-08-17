@@ -33,7 +33,7 @@ $('#mail-list-signup').submit(function(e){
         success     : function(data) {
             if (data.result.result == 'success'){
                 $('#mail-list-signup .result').removeClass('error').addClass('success');
-                $('#mail-list-signup .result').html('Almost finished...<br>Please check your inbox for a link to confirm your address.');
+                $('#mail-list-signup .result').html('You are now subscribed.');
             }
             else {
                 msg = parseSendInBlueSignupError(data.result.result, $('#mail-list-signup .email').val());
