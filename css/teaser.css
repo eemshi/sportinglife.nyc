@@ -89,3 +89,14 @@ ul,li {
   font-size: 50px;
   align-self: center;
 }
+
+.play, .pause {
+  font-size: 14px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.play {
+  display: none;
+}

@@ -22,9 +22,23 @@
     <script src="js/mail-list.js"></script>
     <script>
     $(document).ready(function(){
+        var vid = document.getElementById('bgvid');
+        $('.pause').click(
+          function() {
+            vid.pause();
+            $('.pause').toggle();
+            $('.play').toggle();
+          });
+        $('.play').click(
+          function() {
+            vid.play();
+            $('.pause').toggle();
+            $('.play').toggle();
+          });
         md = new MobileDetect(window.navigator.userAgent);
         if (md.mobile() !== null) {
             var vid = document.getElementById('bgvid');
+            $('.pause').hide();
             $('.mobile').show();
             $('.mobile').click(
               function() {
@@ -39,6 +53,12 @@
   <video playsinline webkit-playsinline autoplay loop poster="img/teaser-poster.jpg" id="bgvid">
       <source src="http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER4.mp4">
   </video>
+  <div class="play">
+    <i class="fa fa-play fa-inverse fa-sm" aria-hidden="true"></i>
+  </div>
+  <div class="pause">
+    <i class="fa fa-pause fa-inverse fa-sm" aria-hidden="true"></i>
+  </div>
   <div class="flex-center">
     <div class="mobile">
       <i class="fa fa-play-circle fa-inverse fa-lg" aria-hidden="true"></i>
