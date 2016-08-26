@@ -2,7 +2,6 @@
   font-family: LetterRacer10;
   src: url("../font/LetterRacer10.ttf");
 }
-
 body {
   background-color: #000;
   color: #fff;
@@ -10,76 +9,60 @@ body {
   font-size: 1.25em;
   text-align: center;
 }
-
 h2 {
   text-align: center;
 }
-
 a {
   color: #fff;
 }
-
 span {
   font-size: 0.9em;
   line-height: 1.5em;
 }
-
 #bgvid {
   width: 100%;
   height: auto;
 }
-
 .cover {
   margin: auto;
   width: 70%;
 }
-
 .cover img {
   width: 100%;
   height: auto;
 }
-
 .ep-sm {
   margin: 0.5em;
   font-size: 1.5em;
 }
-
 .merch-sm {
   margin: 1.5em 0;
 }
-
 .play, .pause, .ep, .merch {
   display: none;
 }
-
 footer {
   margin: 0 auto;
   width: 100px;
   padding: 10px;
 }
-
 @media only screen and (min-width: 800px) {
   body {
   	font-size: 2.5em;
   }
-
   span {
   	font-size: 0.5em;
     line-height: 1em;
   }
-
   h2 {
     text-align: center;
   }
-
   a {
     text-decoration: none;
   }
-
   a:hover {
     text-decoration: underline;
   }
-
   .flex-row {
     display: -webkit-flex; /* Safari */
     display: flex;
@@ -87,7 +70,6 @@ footer {
     flex-flow:         row nowrap;
     align-items: center;
   }
-
   .flex-center {
     display: -webkit-flex; /* Safari */
     display: flex;
@@ -97,31 +79,26 @@ footer {
     justify-content: center;
     -webkit-justify-content: center;
   }
-
   #bgvid {
     width: 80%;
     height: auto;
   }
-
   .cover {
     height: 400px;
     width: auto;
     margin: 0 0.5em;
     margin-bottom: 1.5em;
   }
-
   .cover img {
     height: 100%;
     width: auto;
   }
-
   .merch, .ep {
     border: -1px solid #fff;
     height: 400px;
     width: calc((100% - 400px) / 2);
     text-align: center;
   }
-
   .play, .pause {
     display: block;
     font-size: 14px;
@@ -129,11 +106,9 @@ footer {
     top: 15px;
     left: 15px;
   }
-
   .play, .ep-sm, .merch-sm {
     display: none;
   }
-
   footer {
     margin: 0 auto;
     width: 100px;
