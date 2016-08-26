@@ -24,6 +24,11 @@ span {
   line-height: 1.5em;
 }
 
+#bgvid {
+  width: 100%;
+  height: auto;
+}
+
 .cover {
   margin: auto;
   width: 70%;
@@ -36,7 +41,7 @@ span {
 
 .ep-sm {
   margin: 0.5em;
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
 .merch-sm {
@@ -101,6 +106,11 @@ footer {
     -webkit-justify-content: center;
   }
 
+  #bgvid {
+    width: 80%;
+    height: auto;
+  }
+
   .cover {
     height: 400px;
     width: auto;
@@ -120,16 +130,12 @@ footer {
     text-align: center;
   }
 
-  /*.ep {
-    font-size: 1.5em;
-  }*/
-
   .play, .pause {
     display: block;
     font-size: 14px;
-    position: absolute;
+    position: fixed;
     top: 15px;
-    right: 15px;
+    left: 15px;
   }
 
   .play, .ep-sm, .merch-sm {
