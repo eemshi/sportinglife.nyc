@@ -48,15 +48,7 @@ span {
   margin: 1.5em 0;
 }
 
-.mobile {
-  font-size: 50px;
-  position: absolute;
-  left: 50%;
-  top: 15%;
-  transform: translate(-50%, -50%);
-}
-
-.play, .pause, .ep, .merch, .mobile {
+.play, .pause, .ep, .merch {
   display: none;
 }
 
