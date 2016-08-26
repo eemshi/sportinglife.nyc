@@ -38,13 +38,14 @@
       if (md.mobile() !== null) {
           var vid = document.getElementById('bgvid');
           $('#bgvid').attr("src","http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER_md.mp4");
-          $('.pause').hide();
-          $('.mobile').show();
-          $('.mobile').click(
-            function() {
-              vid.play();
-              $('.mobile').hide();
-            });
+          $('#bgvid').attr("controls","controls");
+          // $('.pause').hide();
+          // $('.mobile').show();
+          // $('.mobile').click(
+          //   function() {
+          //     vid.play();
+          //     $('.mobile').hide();
+          //   });
       }});
   </script>
 </head>
