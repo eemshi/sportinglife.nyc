@@ -46,6 +46,9 @@ footer {
   width: 100px;
   padding: 10px;
 }
+.links {
+  line-height: 2em;
+}
 @media only screen and (max-width: 800px) {
   .videoWrapper {
     position: relative;
@@ -128,5 +131,10 @@ footer {
     margin: 0 auto;
     width: 100px;
     padding: 30px;
+  }
+  .links {
+    font-size: 0.9em;
+    line-height: 1em;
+    margin-top: 0.5em;
   }
 }
