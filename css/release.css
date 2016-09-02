@@ -46,7 +46,22 @@ footer {
   width: 100px;
   padding: 10px;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 912px) {
   body {
   	font-size: 2.5em;
   }
@@ -114,18 +129,4 @@ footer {
     width: 100px;
     padding: 30px;
   }
-
-  /*.videoWrapper {
-  	position: relative;
-  	padding-bottom: 56.25%;
-  	padding-top: 25px;
-  	height: 0;
-  }
-  .videoWrapper iframe {
-  	position: absolute;
-  	top: 0;
-  	left: 0;
-  	width: 100%;
-  	height: 100%;
-  }*/
 }
