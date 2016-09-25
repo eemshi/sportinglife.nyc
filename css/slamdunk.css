@@ -26,19 +26,6 @@ a {
 #bgvid {
   width: 100%;
 }
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0;
-}
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .cover {
   margin: auto;
   width: 70%;
@@ -59,7 +46,7 @@ span {
   font-size: 0.8em;
   line-height: 1.5em;
 }
-.play, .pause, .ep, .merch {
+.ep, .merch {
   display: none;
 }
 footer {
@@ -93,7 +80,6 @@ footer {
     bottom: -100%;
   }
   .ytvid {
-    width: 100%;
     height: 100%;
   }
   #bgvid {
@@ -133,10 +119,6 @@ footer {
     justify-content: center;
     -webkit-justify-content: center;
   }
-  #bgvid {
-    width: 80%;
-    height: auto;
-  }
   .cover {
     height: 400px;
     width: auto;
@@ -154,14 +136,7 @@ footer {
     text-align: center;
     padding-bottom: 5%;
   }
-  .play, .pause {
-    display: block;
-    font-size: 14px;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-  }
-  .play, .ep-sm, .merch-sm {
+  .ep-sm, .merch-sm {
     display: none;
   }
   .links {
