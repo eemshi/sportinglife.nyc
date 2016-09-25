@@ -17,51 +17,71 @@
   <title>Sporting Life</title>
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/> -->
   <link rel="stylesheet" href="css/slamdunk.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    function turnPage() {
+      $('.title').hide();
+      $('.page2').show();
+      $('html,body').animate({
+          scrollTop: $(".page2").offset().top},
+          'slow');
+    };
+  </script>
 </head>
 
 <body>
-  <div class="videoWrapper">
-    <iframe width="912" height="513" src="https://www.youtube.com/embed/TwbNAQAQHBI?autoplay=1" controls="0" frameborder="0" allowfullscreen></iframe>
+  <div style="position: absolute; z-index: -99; width: 100%; height: 100%">
+    <iframe frameborder="0" height="100%" width="100%" controls="0" allowfullscreen
+      src="https://www.youtube.com/embed/TwbNAQAQHBI?autoplay=1">
+    </iframe>
   </div>
-  <h2>Slam Dunk Vol. II Out Now</h2>
-  <div class="flex-row flex-row-sm">
-    <div class="ep flex-center">
-      <div>
-        <a href="https://now.bt.co/bundles/sporting-life-slam-dunk-2s">DOWNLOAD<br>
-        Slam Dunk Vol. II</a><br>
-        <!-- <div class="links">
+  <!-- <iframe id="bgvid" src="https://www.youtube.com/embed/TwbNAQAQHBI?autoplay=1" controls="0" frameborder="0" allowfullscreen></iframe> -->
+  <div class="title">
+    <h2 onclick="turnPage()">Slam Dunk Vol. II Out Now</h2>
+  </div>
+  <div class="page2">
+    <h2 class="page2title">Slam Dunk Vol. II Out Now</h2>
+    <div class="flex-row flex-row-sm">
+      <div class="ep flex-center">
+        <div>
+          <a href="https://now.bt.co/bundles/sporting-life-slam-dunk-2s">DOWNLOAD<br>
+          Slam Dunk Vol. II</a>
+          <!-- <div class="links">
+            <a href="https://open.spotify.com/album/4KX9eZSn3xBNRC1WtC12Bc"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+            <a href="https://itunes.apple.com/us/album/slam-dunk-vol.-1-ep/id1148155616"><i class="fa fa-apple" aria-hidden="true"></i></a>
+          </div> -->
+        </div>
+      </div>
+      <div class="cover">
+        <div>
+          <a href="https://now.bt.co/bundles/sporting-life-slam-dunk-2s"><img src="img/slam-dunk2.jpg"/></a>
+        </div>
+      </div>
+      <div class="ep-sm">
+        <a href="https://now.bt.co/bundles/sporting-life-slam-dunk-2s">DOWNLOAD</a>
+        <!-- <div class="flex-row links">
           <a href="https://open.spotify.com/album/4KX9eZSn3xBNRC1WtC12Bc"><i class="fa fa-spotify" aria-hidden="true"></i></a>
           <a href="https://itunes.apple.com/us/album/slam-dunk-vol.-1-ep/id1148155616"><i class="fa fa-apple" aria-hidden="true"></i></a>
         </div> -->
       </div>
+      <div class="merch flex-center">
+        <a href="http://shop.letterracer.com/products/sporting-life-realtree-shooting-tee">
+          <img class="new" src="img/new.gif"/><br>
+          Realtree<br>
+          Shooting Tee<br><br>
+          <span>Exclusively at letterracer.com</span></a>
+      </div>
+      <div class="merch-sm">
+        <a href="http://shop.letterracer.com/products/sporting-life-realtree-shooting-tee">
+          <img class="new" src="img/new.gif"/><br>
+          Buy Realtree Shooting Tee</a><br>
+          <span>Exclusively at letterracer.com</span>
+      </div>
     </div>
-    <div class="cover">
-      <a href="https://now.bt.co/bundles/sporting-life-slam-dunk-2s"><img src="img/slam-dunk2.jpg"/></a>
-    </div>
-    <div class="ep-sm">
-      <a href="https://now.bt.co/bundles/sporting-life-slam-dunk-2s">DOWNLOAD</a>
-      <!-- <div class="flex-row links">
-        <a href="https://open.spotify.com/album/4KX9eZSn3xBNRC1WtC12Bc"><i class="fa fa-spotify" aria-hidden="true"></i></a>
-        <a href="https://itunes.apple.com/us/album/slam-dunk-vol.-1-ep/id1148155616"><i class="fa fa-apple" aria-hidden="true"></i></a>
-      </div> -->
-    </div>
-    <div class="merch flex-center">
-      <a href="http://shop.letterracer.com/products/sporting-life-realtree-shooting-tee">
-        <img class="new" src="img/new.gif"/><br>
-        Realtree<br>
-        Shooting Tee<br><br>
-        <span>Exclusively at letterracer.com</span></a>
-    </div>
-    <div class="merch-sm">
-      <a href="http://shop.letterracer.com/products/sporting-life-realtree-shooting-tee">
-        <img class="new" src="img/new.gif"/><br>
-        Buy Realtree Shooting Tee</a><br>
-        <span>Exclusively at letterracer.com</span>
-    </div>
+    <a href="http://shop.letterracer.com/products/slam-dunk-vol-i">Slam Dunk Vol. I</a>
+    <footer>
+      <img width="100%" src="img/logo.jpg"/>
+    </footer>
   </div>
-  <a href="http://shop.letterracer.com/products/slam-dunk-vol-i">Slam Dunk Vol. I</a>
-  <footer>
-    <img width="100%" src="img/logo.jpg"/>
-  </footer>
 </body>
 </html>
