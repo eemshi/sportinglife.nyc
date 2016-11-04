@@ -8,7 +8,6 @@ body {
   font-family: LetterRacer10;
   font-size: 2em;
   text-align: center;
-  width: 100%;
 }
 a {
   color: white;
@@ -42,11 +41,6 @@ a {
   justify-content: center;
   -webkit-justify-content: center;
 }
-@media (orientation: portrait) {
-  .flex-center {
-    width: 100%;
-  }
-}
 .art {
   margin: 0 auto;
   margin-top: 2em;
@@ -62,9 +56,20 @@ a {
 }*/
 .merch-item {
   margin: 0 auto;
-  width: 700px;
+  width: 625px;
   margin-top: 3em;
   margin-bottom: 2em;
+}
+@media (max-width: 575px) {
+  .flex-center {
+    width: 100%;
+  }
+  .art, .merch-item {
+    width: 90%;
+  }
+  .art {
+    margin-top: 1em;
+  }
 }
 /*#merch {
   width: 90%;

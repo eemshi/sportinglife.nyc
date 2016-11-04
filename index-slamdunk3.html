@@ -18,21 +18,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
   <link rel="stylesheet" href="css/slamdunk3.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/mobile.min.js"></script>
   <script>
   $(document).ready(function(){
-      var vid = document.getElementById('slam3');
+      var audio = document.getElementById('slam3');
       $('.pause').click(
         function() {
-          vid.pause();
+          audio.pause();
           $('.pause').toggle();
           $('.play').toggle();
         });
       $('.play').click(
         function() {
-          vid.play();
+          audio.play();
           $('.pause').toggle();
           $('.play').toggle();
         });
+      md = new MobileDetect(window.navigator.userAgent);
+      if (md.mobile() !== null) {
+        var audio = document.getElementById('slam3');
+        $('.pause').hide();
+        $('.play').show();
+        $('.play').click(
+          function() {
+            audio.play();
+            $('.pause').toggle();
+          });
+        };
       });
   </script>
 </head>
