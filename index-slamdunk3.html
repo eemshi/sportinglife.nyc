@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- twitter metadata -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@sportinglifeny">
+  <meta name="twitter:domain" content="sportinglife.nyc">
+  <meta name="twitter:creator" content="@sportinglifeny">
+  <meta name="twitter:title" content="Sporting Life">
+  <meta name="twitter:image:src" content="http://sportinglife.nyc/img/slamdunk2.jpg">
+  <meta name="twitter:description" content="Slam Dunk Vol. III + Merch Out Now">
+  <!-- facebook metadata -->
+  <meta property="og:image" content="http://sportinglife.nyc/img/courtvision.jpg" />
+  <meta name="description" content="Slam Dunk Vol. III + Merch Out Now">
+
+  <title>Sporting Life</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
+  <link rel="stylesheet" href="css/slamdunk3.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      var vid = document.getElementById('slam3');
+      $('.pause').click(
+        function() {
+          vid.pause();
+          $('.pause').toggle();
+          $('.play').toggle();
+        });
+      $('.play').click(
+        function() {
+          vid.play();
+          $('.pause').toggle();
+          $('.play').toggle();
+        });
+      });
+  </script>
+</head>
+
+<body>
+  <div class="play">
+    <i class="fa fa-play fa-inverse fa-sm" aria-hidden="true"></i>
+  </div>
+  <div class="pause">
+    <i class="fa fa-pause fa-inverse fa-sm" aria-hidden="true"></i>
+  </div>
+  <!-- <div id="merch" class="flex-center">
+    <div class="merch-item"><img class="glow" src="img/slamdunk-shirt.gif"></div>
+    <div class="album-art"><img src="img/slam-dunk3.jpg"></div>
+    <div class="merch-item"><img class="glow" src="img/slamdunk-shorts.gif"></div>
+  </div> -->
+  <div class="art">
+    <a href="http://shop.letterracer.com/products/slam-dunk-vol-iii">
+      <img width="100%" src="img/slam-dunk3.jpg">
+    </a>
+  </div>
+  <!-- <div class="flex-center clothes"> -->
+  <div class="merch-item">
+    <a href="http://shop.letterracer.com/products/sportinglife-slam-dunk-tee">
+      <img class="glow" width="90%" src="img/slamdunk-shirt.gif">
+    </a>
+  </div>
+  <div class="merch-item">
+    <a href="http://shop.letterracer.com/products/sportinglife-athletic-shorts">
+      <img class="glow" width="90%" src="img/slamdunk-shorts.gif">
+    </a>
+  </div>
+  <!-- </div> -->
+  <!-- <br>
+  <a href="http://shop.letterracer.com/products/slam-dunk-vol-i">Slam Dunk Vol. I</a> /
+  <a href="http://shop.letterracer.com/products/slam-dunk-vol-ii">Slam Dunk Vol. II</a> -->
+  <footer class="flex-center">
+    <div class="flex-item spin-left"><img src="img/sports-logo-inverse.png"/></div>
+    <div class="flex-item lr-logo">
+      <a href="http://letterracer.com">
+        <img src="img/lr-logo-inverse.png"/>
+      </a>
+    </div>
+    <div class="flex-item spin-right"><img src="img/sports-logo2-inverse.png"/></div>
+  </footer>
+  <audio id="slam3" autoplay>
+    <source src="audio/SLAM003.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+</body>
+</html>

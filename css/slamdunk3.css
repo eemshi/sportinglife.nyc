@@ -1,0 +1,157 @@
+@font-face {
+  font-family: LetterRacer10;
+  src: url("../font/LetterRacer10.ttf");
+}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: LetterRacer10;
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+}
+a {
+  color: white;
+}
+.play, .pause {
+  font-size: 0.75em;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0.75;
+  cursor: pointer;
+}
+.play:hover, .pause:hover {
+  opacity: 1;
+}
+.play {
+  display: none;
+}
+.glow {
+	-webkit-filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 1));
+}
+.glow:hover {
+	-webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 1));
+}
+.flex-center {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  -webkit-flex-flow: row nowrap; /* Safari */
+  flex-flow:         row nowrap;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+@media (orientation: portrait) {
+  .flex-center {
+    width: 100%;
+  }
+}
+.art {
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  width: 575px;
+}
+.art:hover, .lr-logo:hover {
+  opacity: 0.75;
+}
+/*.clothes {
+  margin: 0 auto;
+  width: 700px;
+}*/
+.merch-item {
+  margin: 0 auto;
+  width: 700px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+/*#merch {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1.5em;
+}
+.merch-item {
+  text-align: center;
+  width: 25%;
+}
+.merch-item img {
+  width: 90%;
+}
+.album-art {
+  width: 50%;
+}
+.album-art img {
+  width: 80%;
+}*/
+.flex-item {
+  text-align: center;
+  width: 33%;
+}
+.flex-item img {
+  width: 40%;
+}
+footer {
+  width: 555px;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+}
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+.spin-right{
+    -webkit-animation-name: spinnerRotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+@-webkit-keyframes spinnerRotate2
+{
+    from{-webkit-transform:rotate(360deg);}
+    to{-webkit-transform:rotate(0deg);}
+}
+@-moz-keyframes spinnerRotate2
+{
+    from{-moz-transform:rotate(360deg);}
+    to{-moz-transform:rotate(0deg);}
+}
+@-ms-keyframes spinnerRotate2
+{
+    from{-ms-transform:rotate(360deg);}
+    to{-ms-transform:rotate(0deg);}
+}
+.spin-left{
+    -webkit-animation-name: spinnerRotate2;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate2;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate2;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
