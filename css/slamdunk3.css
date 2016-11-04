@@ -12,6 +12,10 @@ body {
 a {
   color: white;
 }
+.mobile {
+  display: none;
+  margin-top: 0.5em;
+}
 .play, .pause {
   font-size: 0.75em;
   position: fixed;
@@ -50,15 +54,11 @@ a {
 .art:hover, .lr-logo:hover {
   opacity: 0.75;
 }
-/*.clothes {
-  margin: 0 auto;
-  width: 700px;
-}*/
 .merch-item {
   margin: 0 auto;
   width: 625px;
   margin-top: 3em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 @media (max-width: 575px) {
   .flex-center {
@@ -76,26 +76,9 @@ a {
   }
   .merch-item {
     margin-top: 1em;
+    margin-bottom: 2em;
   }
 }
-/*#merch {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 1.5em;
-}
-.merch-item {
-  text-align: center;
-  width: 25%;
-}
-.merch-item img {
-  width: 90%;
-}
-.album-art {
-  width: 50%;
-}
-.album-art img {
-  width: 80%;
-}*/
 .flex-item {
   text-align: center;
   width: 33%;
