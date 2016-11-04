@@ -8,10 +8,10 @@
   <meta name="twitter:domain" content="sportinglife.nyc">
   <meta name="twitter:creator" content="@sportinglifeny">
   <meta name="twitter:title" content="Sporting Life">
-  <meta name="twitter:image:src" content="http://sportinglife.nyc/img/slamdunk2.jpg">
+  <meta name="twitter:image:src" content="http://sportinglife.nyc/img/slam-dunk3-800.jpg">
   <meta name="twitter:description" content="Slam Dunk Vol. III + Merch Out Now">
   <!-- facebook metadata -->
-  <meta property="og:image" content="http://sportinglife.nyc/img/courtvision.jpg" />
+  <meta property="og:image" content="http://sportinglife.nyc/img/slam-dunk3-800.jpg" />
   <meta name="description" content="Slam Dunk Vol. III + Merch Out Now">
 
   <title>Sporting Life</title>
@@ -36,26 +36,14 @@
         });
       md = new MobileDetect(window.navigator.userAgent);
       if (md.mobile() !== null) {
-        var audio = document.getElementById('slam3');
         $('.pause').hide();
         $('.play').show();
-        $('.play').click(
-          function() {
-            audio.play();
-            $('.pause').toggle();
-          });
-        };
-      });
+      };
+    });
   </script>
 </head>
 
 <body>
-  <div class="play">
-    <i class="fa fa-play fa-inverse fa-sm" aria-hidden="true"></i>
-  </div>
-  <div class="pause">
-    <i class="fa fa-pause fa-inverse fa-sm" aria-hidden="true"></i>
-  </div>
   <!-- <div id="merch" class="flex-center">
     <div class="merch-item"><img class="glow" src="img/slamdunk-shirt.gif"></div>
     <div class="album-art"><img src="img/slam-dunk3.jpg"></div>
@@ -63,10 +51,18 @@
   </div> -->
   <div class="art">
     <a href="http://shop.letterracer.com/products/slam-dunk-vol-iii">
-      <img width="100%" src="img/slam-dunk3.jpg">
+      <img width="100%" src="img/slam-dunk3-800.jpg">
     </a>
   </div>
   <!-- <div class="flex-center clothes"> -->
+  <div class="controls">
+    <div class="play">
+      <i class="fa fa-play fa-inverse fa-sm" aria-hidden="true"></i>
+    </div>
+    <div class="pause">
+      <i class="fa fa-pause fa-inverse fa-sm" aria-hidden="true"></i>
+    </div>
+  </div>
   <div class="merch-item">
     <a href="http://shop.letterracer.com/products/sportinglife-slam-dunk-tee">
       <img class="glow" width="90%" src="img/slamdunk-shirt.gif">
