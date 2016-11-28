@@ -27,6 +27,13 @@ video#bgvid {
   background-size: cover;
 }
 
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+}
+
 .flex-center {
   height: 100%;
   display: -webkit-flex;
