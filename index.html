@@ -16,7 +16,7 @@
 
   <title>Sporting Life</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
-  <link rel="stylesheet" href="css/teaser.css"/>
+  <link rel="stylesheet" href="css/slamdunk-full.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/mobile.min.js"></script>
   <script>
@@ -47,23 +47,106 @@
             });
       }});
   </script>
+  <script>
+    function turnPage() {
+      $('.page2').show();
+      $('html,body').animate({
+          scrollTop: $(".page2").offset().top},
+          'slow');
+    };
+  </script>
 </head>
 
 <body>
-<video playsinline webkit-playsinline autoplay loop poster="img/nothingtohide.png" id="bgvid">
-    <source src="https://s3.amazonaws.com/lr-assets/nothingtohideclip25-2000.mp4">
-</video>
-<div class="play">
-  <i class="fa fa-play fa-inverse fa-sm" aria-hidden="true"></i>
-</div>
-<div class="pause">
-  <i class="fa fa-pause fa-inverse fa-sm" aria-hidden="true"></i>
-</div>
-<div class="flex-center">
-  <div class="mobile">
-    <i class="fa fa-play-circle fa-inverse fa-lg" aria-hidden="true"></i>
+  <video playsinline webkit-playsinline autoplay loop poster="img/nothingtohide.png" id="bgvid">
+      <source src="https://s3.amazonaws.com/lr-assets/nothingtohideclip25-2000.mp4">
+  </video>
+  <div class="play">
+    <i class="fa fa-play fa-inverse fa-sm" aria-hidden="true"></i>
   </div>
-  <div><h2><a href="https://sportinglife.bandcamp.com/album/slam-dunk">Slam Dunk (Vol. I-III) Out Now</a></h2></div>
-</div>
+  <div class="pause">
+    <i class="fa fa-pause fa-inverse fa-sm" aria-hidden="true"></i>
+  </div>
+  <div class="flex-center page1">
+    <div class="mobile">
+      <i class="fa fa-play-circle fa-inverse fa-lg" aria-hidden="true"></i>
+    </div>
+    <div><h2 class="page-turner" onclick="turnPage()">Slam Dunk (Vol. I-III) Out Now</h2></div>
+  </div>
+  <div class="page2">
+    <div class="flex-row albums">
+      <div class="flex-row-item">
+        <img src="img/slam-dunk-800.jpg"/>
+        <div class="links">
+          <a href="http://shop.letterracer.com/collections/sporting-life/products/slam-dunk-vol-i">Vol. I</a>
+          <a href="https://open.spotify.com/album/4KX9eZSn3xBNRC1WtC12Bc"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+          <a href="https://itunes.apple.com/us/album/slam-dunk-vol.-1-ep/id1148155616"><i class="fa fa-apple" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="flex-row-item">
+        <img src="img/slam-dunk2.jpg"/>
+        <div class="links">
+          <a href="http://shop.letterracer.com/collections/sporting-life/products/slam-dunk-vol-ii">Vol. II</a>
+          <a href="https://open.spotify.com/album/0ExQVzPexCL7OvRvpc5C05"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+          <a href="https://itunes.apple.com/us/album/slam-dunk-vol.-ii-ep/id1159524381"><i class="fa fa-apple" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="flex-row-item">
+        <img src="img/slam-dunk3-800.jpg"/>
+        <div class="links">
+          <a href="http://shop.letterracer.com/collections/sporting-life/products/slam-dunk-vol-iii">Vol. III</a>
+          <a href="https://open.spotify.com/album/0ExQVzPexCL7OvRvpc5C05"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+          <a href="https://itunes.apple.com/us/album/slam-dunk-vol.-ii-ep/id1159524381"><i class="fa fa-apple" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="banner flex-center">
+      <div class="banner-bg"></div>
+      <div><a class="order-button" href="https://sportinglife.bandcamp.com/album/slam-dunk">PRE-ORDER VINYL</a></div>
+    </div>
+    <div class="flex-row merch">
+      <div class="merch-item">
+        <a href="http://shop.letterracer.com/products/sportinglife-slam-dunk-tee">
+          <img class="glow" src="img/slamdunk-shirt.gif"/>
+        </a>
+        <div class="links">
+          <a href="http://shop.letterracer.com/products/sportinglife-slam-dunk-tee">SLAM DUNK TEE</a>
+        </div>
+      </div>
+      <div class="merch-item">
+        <a href="http://shop.letterracer.com/products/sportinglife-athletic-shorts">
+          <img class="glow" src="img/slamdunk-shorts.gif"/>
+        </a>
+        <div class="links">
+          <a href="http://shop.letterracer.com/products/sportinglife-athletic-shorts">ASSIST SHORTS</a>
+        </div>
+      </div>
+      <div class="merch-item">
+        <a href="http://shop.letterracer.com/products/sporting-life-realtree-shooting-tee">
+          <img class="glow" src="img/realtree.gif"/>
+        </a>
+        <div class="links">
+          <a href="http://shop.letterracer.com/products/sporting-life-realtree-shooting-tee">'REALTREE' SHOOTING TEE</a>
+        </div>
+      </div>
+      <div class="merch-item">
+        <a href="http://shop.letterracer.com/products/sportinglife-slam-dunk-vol-1-sweatband">
+          <img class="glow" src="img/sweatband.gif"/>
+        </a>
+        <div class="links">
+          <a href="http://shop.letterracer.com/products/sportinglife-slam-dunk-vol-1-sweatband">SWEATBAND</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="flex-row">
+    <div class="footer-item spin-left"><img src="img/sports-logo-inverse.png"/></div>
+    <div class="footer-item lr-logo">
+      <a href="http://shop.letterracer.com">
+        <img src="img/lr-logo-inverse.png"/>
+      </a>
+    </div>
+    <div class="footer-item spin-right"><img src="img/sports-logo2-inverse.png"/></div>
+  </footer>
 </body>
 </html>

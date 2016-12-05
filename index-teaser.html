@@ -37,7 +37,7 @@
         md = new MobileDetect(window.navigator.userAgent);
         if (md.mobile() !== null) {
             var vid = document.getElementById('bgvid');
-            $('#bgvid').attr("src","http://d2ra2za53afm6b.cloudfront.net/SPORT_HYDRATE_TEASER_md.mp4");
+            $('#bgvid').attr("src","https://s3.amazonaws.com/lr-assets/SPORT_HYDRATE_TEASER_md.mp4");
             $('.pause').hide();
             $('.mobile').show();
             $('.mobile').click(
