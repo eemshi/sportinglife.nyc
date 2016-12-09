@@ -131,6 +131,10 @@ video#bgvid {
   text-decoration: underline;
 }
 
+.page-turner:hover {
+  font-size: 33px;
+}
+
 .mobile {
   display: none;
   font-size: 50px;
