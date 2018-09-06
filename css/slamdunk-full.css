@@ -129,9 +129,6 @@ video#bgvid {
 .page-turner {
   cursor: pointer;
   text-decoration: underline;
-}
-
-.page-turner:hover {
   font-size: 33px;
 }
 
@@ -154,7 +151,6 @@ video#bgvid {
 
 .page2 {
   width: 100%;
-  display: none;
   padding-top: 30px;
 }
 
@@ -173,7 +169,6 @@ video#bgvid {
   background-image: url('../img/slam-dunk-vinyl.jpg');
   background-position: center;
   opacity: 0.7;
-  z-index: -1;
 }
 
 a.order-button {
@@ -193,9 +188,6 @@ a:hover.order-button {
 }
 
 .glow {
-	-webkit-filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 1));
-}
-.glow:hover {
 	-webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 1));
 }
 
@@ -279,4 +271,35 @@ footer {
     -ms-animation-duration: 5s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
+}
+
+/* Pulse Grow */
+@-webkit-keyframes pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+@keyframes pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+.pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: pulse-grow;
+    animation-name: pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
 }
